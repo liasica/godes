@@ -1,6 +1,15 @@
 Golang DES encrypt or decrypt
 ======
 
+Useage
+=========================================
+```golang
+key := "this is a 24 byte key !!"
+msg := "This is a test message"
+enret := godes.Des(key, msg, 1, 0, "", 0)
+deret := godes.Des(key, enret, 0, 0, "", 0)
+```
+
 How Encryption-decryption affects content
 =========================================
 
@@ -63,13 +72,4 @@ d2) the same as in e2) (ASCII)
      |            |                    |
   (use as is)   (E2C)             (use as is)
      |            |                    |
-```
-
-Useage
-=========================================
-```golang
-key := "this is a 24 byte key !!"
-msg := "This is a test message"
-enret := godes.Des(key, msg, 1, 0, "", 0)
-deret := godes.Des(key, enret, 0, 0, "", 0)
 ```
