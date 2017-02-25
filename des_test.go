@@ -30,7 +30,7 @@ var msgs []string = []string{
 func TestDes(t *testing.T) {
     for k, key := range keys {
         if len(key) < 24 && len(key) != 8 {
-            t.Errorf("key's length is smaller than 24: %s", key)
+            t.Errorf("key length is smaller than 24: %s", key)
         } else {
             if k >= len(msgs) {
                 t.Error("keys length not match msgs length")
