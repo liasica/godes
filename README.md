@@ -73,8 +73,3 @@ msg := "This is a test message"
 enret := godes.Des(key, msg, 1, 0, "", 0)
 deret := godes.Des(key, enret, 0, 0, "", 0)
 ```
-
-PHP Javascript Perl Version
-=========================================
-
-[Code on Github](https://github.com/liasica/des)
