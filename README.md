@@ -8,11 +8,11 @@ Usage
 ```golang
 key := "this is a 24 byte key !!"
 msg := "This is a test message"
-enret, err := Des(key, msg, 1, 0, "", 0)
+enret, err := godes.Des(key, msg, 1, 0, "", 0)
 if err != nil {
     fmt.Printf("encrypt has error: %v", err)
 } else {
-    deret, err := Des(key, enret, 0, 0, "", 0)
+    deret, err := godes.Des(key, enret, 0, 0, "", 0)
     if err != nil {
         fmt.Printf("decrypt has error: %v", err)
     }
