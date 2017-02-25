@@ -1,7 +1,7 @@
 Golang DES encrypt or decrypt
 ======
 
-Useage
+Usage
 =========================================
 `go get -u -v github.com/liasica/godes`
 
