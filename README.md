@@ -3,6 +3,8 @@ Golang DES encrypt or decrypt
 
 Useage
 =========================================
+`go get -u -v github.com/liasica/godes`
+
 ```golang
 key := "this is a 24 byte key !!"
 msg := "This is a test message"
