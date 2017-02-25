@@ -29,17 +29,20 @@ var msgs []string = []string{
 
 func TestDes(t *testing.T) {
     for k, key := range keys {
-        if len(key) < 24 && len(key) != 8 {
-            t.Errorf("key length is smaller than 24: %s", key)
+
+        if k >= len(msgs) {
+            t.Error("keys length not match msgs length")
+        }
+
+        msg := msgs[k]
+        enret, err := Des(key, msg, 1, 0, "", 0)
+        if err != nil {
+            t.Errorf("%v", err)
         } else {
-            if k >= len(msgs) {
-                t.Error("keys length not match msgs length")
+            deret, err := Des(key, enret, 0, 0, "", 0)
+            if err != nil {
+                t.Errorf("%v", err)
             }
-
-            msg := msgs[k]
-            enret := Des(key, msg, 1, 0, "", 0)
-            deret := Des(key, enret, 0, 0, "", 0)
-
             ret := ""
             for _, l := range []byte(deret) {
                 if l != 0 {
