@@ -9,6 +9,7 @@ http://www.tero.co.uk/des/code.php
 >Alberto has provided the following useful chart to summarise how these output/input encoding options would work:
 
 
+```
 How Encryption-decryption affects content
 =========================================
 
@@ -70,6 +71,7 @@ d2) the same as in e2) (ASCII)
      |            |                    |
   (use as is)   (E2C)             (use as is)
      |            |                    |
+```
 
 ### Useage
 ```golang
