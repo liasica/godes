@@ -1,7 +1,7 @@
 Golang DES encrypt or decrypt
 ======
 
-`⌘` + `V`
+`⌘` + `v`
 
 Usage
 =========================================
